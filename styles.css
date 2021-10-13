@@ -1,0 +1,346 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    background-color: rgb(218, 218, 218);
+}
+
+.container1 {
+    background-color: rgb(255, 255, 255);
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+.index-wrapper ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6699ff;
+    border-top: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+  }
+
+  .index-wrapper li {
+    float: left;
+    border-right: 1px solid rgb(0, 0, 0);
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .index-wrapper li a {
+    display: block;
+    padding: 13px;
+    text-decoration: none;
+  }
+
+  .index-wrapper li a:hover {
+    background-color: rgb(0, 80, 184);
+    color: white;
+  }
+
+  .active2 {
+    background-color: rgb(0, 80, 184);
+    color: rgb(255, 255, 255);
+  }
+
+
+  .active1 {
+    background-color: #00bd48;
+    border-left: 1px solid rgb(0, 0, 0);
+    color: black;
+  }
+
+  .active3 {
+    color: black;
+  }
+
+  .page-title {
+      padding-left: 20px;
+      position: relative;
+      font-size: large;
+  }
+
+  .page-title::after {
+    display: block;
+      content: '';
+     width: 97.8%;
+     height: 1px;
+     background: #538cff;
+     position: absolute;
+     bottom: -5px;
+     left: 20px;
+   }
+
+   .container2 {
+    margin-right: 20px;
+    margin-left: 20px;
+   }
+  
+   .regions-wrapper p{
+    float: left;
+    margin-bottom: 7px;
+    margin-top: 11px;
+   }
+
+   .regions-wrapper ul {
+    list-style-type: none;
+    padding-left: 38%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #91919170;
+  }
+
+  .regions-wrapper li {
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+  }
+
+  .regions-wrapper li a {
+    display: block;
+    padding: 4px;
+    text-decoration: none;
+  }
+
+  .regions-wrapper li a:hover {
+    background-color: rgb(0, 80, 184);
+    color: white;
+  }
+
+  .active4 {
+    background-color: rgb(0, 80, 184);
+    color: white;
+  }
+
+  .active5 {
+    color: black;
+  }
+
+  .paragraph1 {
+    margin-right: 8px;
+    margin-left: 8px;
+    padding-top: 1px;
+  }
+
+  .twitch-embed {
+    padding-left: 10px;
+  }
+
+  .paragraph2 {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  .paragraph2 h2 {
+    color: #1d68ff;
+  }
+
+  .paragraph3 {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  .paragraph3 h2 {
+    color: #1d68ff;
+  }
+
+  .paragraph2 h3 {
+    font-style: italic;
+    color: rgb(63, 63, 63);
+    line-height: 0px;
+    padding-bottom: 25px;
+  }
+
+  .paragraph3::after {
+    display: block;
+      content: '';
+     width: 22.2%;
+     height: 1px;
+     position: absolute;
+     background: #7c7c7c;
+     bottom: 326px;
+     left: 60px;
+   }
+
+  .paragraph2::after {
+    display: block;
+      content: '';
+     width: 93.9%;
+     height: 1px;
+     position: absolute;
+     background: #7c7c7c;
+     bottom: 300px;
+     left: 60px;
+   }
+
+  .rnd1 table, 
+  .rnd1 th, 
+  .rnd1 td {
+    font-family: Arial;
+    font-size : 14px;
+    background-color:#ffffff;
+    border:1px solid #999;
+    border-collapse: collapse;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 49px;
+    padding-left: 49px;
+  }
+
+  .rnd3 table, 
+  .rnd3 th, 
+  .rnd3 td {
+    font-family: Arial;
+    font-size : 14px;
+    background-color:#ffffff;
+    border:1px solid #999;
+    border-collapse: collapse;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 100px;
+  }
+  
+  .round-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 20px;
+  }
+
+  .round-wrapper {
+    padding-left: 20px;
+  }
+
+  .round1 {
+    padding-left: 29px;
+  }
+  .round2 {
+    padding-left: 23px;
+  }
+
+  .round3 {
+    padding-left: 17px;
+  }
+
+
+  .score {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(221, 221, 221);
+  }
+
+  .score-win {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(221, 221, 221);
+    font-weight: 700;
+  }
+
+  .text1 {
+    padding-left: 40px;
+  }
+
+.demo {
+  padding-left: 20px;
+}
+  
+
+table {
+  font-family: Arial;
+  font-size : 14px;
+  background-color:#d1d2d4;
+  border:1px solid rgb(126, 126, 126);
+  border-collapse: collapse;
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+th {
+  font-family: Arial;
+  font-size : 14px;
+  background-color:#d1d2d4;
+  border:1px solid rgb(126, 126, 126);
+  border-collapse: collapse;
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+td {
+  font-family: Arial;
+  font-size : 14px;
+  background-color:#ffffff;
+  border:1px solid rgb(126, 126, 126);
+  border-collapse: collapse;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.table-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.table-container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.table-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-right: 100px;
+  padding-left: 20px;
+}
+
+.panel {
+  padding: 0 3px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.accordion {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 19px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.underline {
+  text-underline-position: over;
+}
+
+.active, .accordion:hover {
+  color: rgb(0, 102, 255); 
+  text-underline-position: below;
+}
+
+li {
+  line-height: 30px;
+}

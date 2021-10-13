@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>New World Tourneys - Weekly Tourney</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="jquery.bracket.min.css" rel="stylesheet"/>
+      <link href="jquery-ui.css" rel="stylesheet"/>
+      <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+      <script type="text/javascript" src="jquery.bracket.min.js"></script>
+      <script type="text/javascript" src="jquery-ui.js"></script>
+</head>
+<body>
+  <div>
+    <img src="images/new-world-tourneys-wallpaper-2.png" style="width:100%"/>
+    </div>
+
+  <div class="container1">
+    <div class="index-wrapper">
+    <ul>
+      <li><a div class="active3" href="index">Home</a></li>
+      <li><a class="active2" href="weekly-tourney">Weekly tourney</a></li>
+      <li><a class="active3" href="dungeon-speedruns-eu">Dungeon Speedruns</a></li>
+      <li><a class="active3" href="archives">Archives</a></li>
+      <li><a class="active3" href="watch-it-live">Watch It Live</a></li>
+      <li><a class="active3" href="submit-your-speedrun">Submit Your Speedrun</a></li>
+      <li style="float:right"><a class="active1" href="support-us">Support Us</a></li>
+    </ul>
+    </div>
+  <div class="page-title">
+    <h1>Weekly Tourney</h1>
+    </div>
+
+  <div class="container2">
+    <div class="regions-wrapper">
+      <ul>
+        <p>Select Region:</p>
+        <li><a class="active4" href="default.asp">EU</a></li>
+        <li><a class="active5" href="news.asp">NA EAST</a></li>
+        <li><a class="active5" href="news.asp">NA WEST</a></li>
+        <li><a class="active5" href="contact.asp">SA</a></li>
+        <li><a class="active5" href="contact.asp">AUS</a></li>
+      </ul>
+      </div>
+
+ <div class="paragraph2">
+   <h2>NWW Tournament 2021 Week 1</h2>
+   <h3>29 October - Server: TBD</h3>
+</div>
+
+  <div class="container3">
+
+<div class="round-wrapper">
+<div class="round-container">
+<div class="round1">
+<table class="rnd1">
+  <td class="rnd1">Round 1</td>
+</table></div>
+
+<div class="round2">
+  <table class="rnd1">
+    <td class="rnd1">Round 2</td>
+  </table></div>
+
+  <div class="round3">
+    <table class="rnd3">
+      <td class="rnd3">Final</td>
+    </table></div>
+  </div>
+
+      <div class="demo"></div>
+
+      <script>
+var autoCompleteData = {
+    teams : [
+      ['fi:Team 1', 'uk:Team 2'],
+      ['it:Team 3', 'sp:Team 4'],
+      ['gr:Team 5', 'se:Team 6'],
+      ['fr:Team 7', 'be:Team 8']
+    ],
+    results : [
+
+    ]
+  }
+ 
+/* Data for autocomplete */
+var acData = ["kr:MC", "ca:HuK", "se:Sweden", "pe:Fenix",
+              "us:USA", "uk:Sen", "fi:Finland"]
+
+                // These are modified by the sliders
+
+ 
+/* If you call doneCb([value], true), the next edit will be automatically 
+   activated. This works only in the first round. */
+function acEditFn(container, data, doneCb) {
+  var input = $('<input type="text">')
+  input.val(data)
+  input.autocomplete({ source: acData })
+  input.blur(function() { doneCb(input.val()) })
+  input.keyup(function(e) { if ((e.keyCode||e.which)===13) input.blur() })
+  container.html(input)
+  input.focus()
+}
+ 
+function acRenderFn(container, data, score, state) {
+  switch(state) {
+    case 'empty-bye':
+      container.append('BYE')
+      return;
+    case 'empty-tbd':
+      container.append('TBD')
+      return;
+ 
+    case 'entry-no-score':
+    case 'entry-default-win':
+    case 'entry-complete':
+      var fields = data.split(':')
+      if (fields.length != 2)
+        container.append('<i>INVALID</i>')
+      else
+        container.append('<img src="images/'+fields[0]+'.png"> ').append(fields[1])
+      return;
+  }
+}
+
+ 
+$(function() {
+    $('.demo').bracket({
+      teamWidth: 120,
+      scoreWidth: 30,
+      matchMargin: 50,
+      roundMargin: 120,
+      init: autoCompleteData,
+      skipConsolationRound: true,
+      decorator: {edit: acEditFn,
+                  render: acRenderFn}})
+  })
+      </script></div>
+
+<div class="tables-wrapper">
+<div class="table-container">
+
+<div class="table1">
+  <table>
+    <tr>
+      <th colspan="3">Team 1</th>
+    </tr>
+    <tr>
+    <th class="table-country">Country</th>
+    <th>Player</th>
+    <th>Role</th>
+    </tr>
+    <tr>
+      <td class="table-country">TBD</td>
+      <td>TBD</td>
+      <td>Healer</td>
+    </tr>
+    <tr>
+      <td>TBD</td>
+      <td>TBD</td>
+      <td>Tank</td>
+    </tr>
+    <tr>
+      <td class="table-country">TBD</td>
+      <td>TBD</td>
+      <td>DPS</td>
+    </tr>
+    <tr>
+      <td class="table-country">TBD</td>
+      <td>TBD</td>
+      <td>Mage</td>
+    </tr>
+    <tr>
+      <td class="table-country">TBD</td>
+      <td>TBD</td>
+      <td>DPS</td>
+    </tr>
+  </table></div>
+
+
+  <div class="table2">
+    <table>
+      <tr>
+        <th colspan="3">Team 2</th>
+      </tr>
+      <tr>
+      <th>Country</th>
+      <th>Player</th>
+      <th>Role</th>
+      </tr>
+      <tr>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>Healer</td>
+      </tr>
+      <tr>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>Tank</td>
+      </tr>
+      <tr>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>DPS</td>
+      </tr>
+      <tr>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>Mage</td>
+      </tr>
+      <tr>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>DPS</td>
+      </tr>
+    </table></div>
+  </div></br></br>
+
+  <div class="table-container1">
+  <div class="table3">
+    <table>
+      <tr>
+        <th colspan="3">Team 3</th>
+      </tr>
+      <tr>
+      <th class="table-country">Country</th>
+      <th>Player</th>
+      <th>Role</th>
+      </tr>
+      <tr>
+        <td class="table-country">TBD</td>
+        <td>TBD</td>
+        <td>Healer</td>
+      </tr>
+      <tr>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>Tank</td>
+      </tr>
+      <tr>
+        <td class="table-country">TBD</td>
+        <td>TBD</td>
+        <td>DPS</td>
+      </tr>
+      <tr>
+        <td class="table-country">TBD</td>
+        <td>TBD</td>
+        <td>Mage</td>
+      </tr>
+      <tr>
+        <td class="table-country">TBD</td>
+        <td>TBD</td>
+        <td>DPS</td>
+      </tr>
+    </table></div>
+  
+  
+    <div class="table4">
+      <table>
+        <tr>
+          <th colspan="3">Team 4</th>
+        </tr>
+        <tr>
+        <th>Country</th>
+        <th>Player</th>
+        <th>Role</th>
+        </tr>
+        <tr>
+          <td>TBD</td>
+          <td>TBD</td>
+          <td>Healer</td>
+        </tr>
+        <tr>
+          <td>TBD</td>
+          <td>TBD</td>
+          <td>Tank</td>
+        </tr>
+        <tr>
+          <td>TBD</td>
+          <td>TBD</td>
+          <td>DPS</td>
+        </tr>
+        <tr>
+          <td>TBD</td>
+          <td>TBD</td>
+          <td>Mage</td>
+        </tr>
+        <tr>
+          <td>TBD</td>
+          <td>TBD</td>
+          <td>DPS</td>
+        </tr>
+      </table></div>
+    </div>
+  </div></div></br></br>
+
+  <div class="table-container2">
+    <div class="table5">
+      <table>
+        <tr>
+          <th colspan="3">Team 5</th>
+        </tr>
+        <tr>
+        <th class="table-country">Country</th>
+        <th>Player</th>
+        <th>Role</th>
+        </tr>
+        <tr>
+          <td class="table-country">TBD</td>
+          <td>TBD</td>
+          <td>Healer</td>
+        </tr>
+        <tr>
+          <td>TBD</td>
+          <td>TBD</td>
+          <td>Tank</td>
+        </tr>
+        <tr>
+          <td class="table-country">TBD</td>
+          <td>TBD</td>
+          <td>DPS</td>
+        </tr>
+        <tr>
+          <td class="table-country">TBD</td>
+          <td>TBD</td>
+          <td>Mage</td>
+        </tr>
+        <tr>
+          <td class="table-country">TBD</td>
+          <td>TBD</td>
+          <td>DPS</td>
+        </tr>
+      </table></div>
+    
+    
+      <div class="table4">
+        <table>
+          <tr>
+            <th colspan="3">Team 6</th>
+          </tr>
+          <tr>
+          <th>Country</th>
+          <th>Player</th>
+          <th>Role</th>
+          </tr>
+          <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>Healer</td>
+          </tr>
+          <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>Tank</td>
+          </tr>
+          <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>DPS</td>
+          </tr>
+          <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>Mage</td>
+          </tr>
+          <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>DPS</td>
+          </tr>
+        </table></div>
+        
+        <div class="table5">
+          <table>
+            <tr>
+              <th colspan="3">Team 7</th>
+            </tr>
+            <tr>
+            <th class="table-country">Country</th>
+            <th>Player</th>
+            <th>Role</th>
+            </tr>
+            <tr>
+              <td class="table-country">TBD</td>
+              <td>TBD</td>
+              <td>Healer</td>
+            </tr>
+            <tr>
+              <td>TBD</td>
+              <td>TBD</td>
+              <td>Tank</td>
+            </tr>
+            <tr>
+              <td class="table-country">TBD</td>
+              <td>TBD</td>
+              <td>DPS</td>
+            </tr>
+            <tr>
+              <td class="table-country">TBD</td>
+              <td>TBD</td>
+              <td>Mage</td>
+            </tr>
+            <tr>
+              <td class="table-country">TBD</td>
+              <td>TBD</td>
+              <td>DPS</td>
+            </tr>
+          </table></div>
+        
+        
+          <div class="table4">
+            <table>
+              <tr>
+                <th colspan="3">Team 8</th>
+              </tr>
+              <tr>
+              <th>Country</th>
+              <th>Player</th>
+              <th>Role</th>
+              </tr>
+              <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+                <td>Healer</td>
+              </tr>
+              <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+                <td>Tank</td>
+              </tr>
+              <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+                <td>DPS</td>
+              </tr>
+              <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+                <td>Mage</td>
+              </tr>
+              <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+                <td>DPS</td>
+              </tr>
+            </table></div>
+          </div>
+
+</div>
+
+  <div class="text1">
+    <p></br>Watch it live <a href="https://www.twitch.tv/brokkrdwarf">here</a> as it unfolds on the 29th October from 6pm GMT.</p></br>
+  </div>
+              
+ </div>
+</div>
+
+</body>
+</html>
