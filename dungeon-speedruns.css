@@ -32,6 +32,8 @@ body {
   .index-wrapper li a {
     display: block;
     padding: 13px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-decoration: none;
   }
 
@@ -95,13 +97,13 @@ body {
   .regions-wrapper li {
     float: left;
     margin-left: 5px;
-    margin-bottom: 7px;
-    margin-top: 7px;
   }
 
   .regions-wrapper li a {
     display: block;
     padding: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-decoration: none;
   }
 
@@ -155,12 +157,12 @@ body {
    .portal1::after {
     display: block;
       content: '';
-     width: 22.5%;
+     width: 23.9%;
      height: 1px;
-     position: absolute;
+     position: relative;
      background: #7c7c7c;
-     bottom: 326px;
-     left: 60px;
+     bottom: 18px;
+     left: 0px;
    }
 
    .portal2 {
@@ -175,12 +177,11 @@ body {
    .portal2::after {
     display: block;
       content: '';
-     width: 25.5%;
+     width: 27.1%;
      height: 1px;
-     position: absolute;
+     position: relative;
      background: #7c7c7c;
-     bottom: 326px;
-     left: 60px;
+     bottom: 18px;
    }
 
    .portal3 {
@@ -195,12 +196,11 @@ body {
    .portal3::after {
     display: block;
       content: '';
-     width: 25.9%;
+     width: 27.5%;
      height: 1px;
-     position: absolute;
+     position: relative;
      background: #7c7c7c;
-     bottom: 326px;
-     left: 60px;
+     bottom: 18px;
    }
 
    .portal4 {
@@ -215,12 +215,11 @@ body {
    .portal4::after {
     display: block;
       content: '';
-     width: 22.4%;
-     height: 1px;
-     position: absolute;
-     background: #7c7c7c;
-     bottom: 326px;
-     left: 60px;
+      width: 23.9%;
+      height: 1px;
+      position: relative;
+      background: #7c7c7c;
+      bottom: 18px;
    }
 
    .portal5 {
@@ -235,12 +234,11 @@ body {
    .portal5::after {
     display: block;
       content: '';
-     width: 23.4%;
-     height: 1px;
-     position: absolute;
-     background: #7c7c7c;
-     bottom: 326px;
-     left: 60px;
+      width: 24.9%;
+      height: 1px;
+      position: relative;
+      background: #7c7c7c;
+      bottom: 18px;
    }
 
 

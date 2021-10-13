@@ -95,8 +95,6 @@ body {
   .regions-wrapper li {
     float: left;
     margin-left: 5px;
-    margin-bottom: 7px;
-    margin-top: 7px;
   }
 
   .regions-wrapper li a {
@@ -138,6 +136,17 @@ body {
     color: #1d68ff;
   }
 
+  .paragraph2::after {
+    display: block;
+    content: '';
+     width: 100%;
+     height: 1px;
+     background: #7c7c7c;
+     position: relative;
+     left: 0px;
+     bottom: 22px;
+   }
+
   .paragraph3 {
     margin-right: 8px;
     margin-left: 8px;
@@ -162,17 +171,6 @@ body {
      position: absolute;
      background: #7c7c7c;
      bottom: 326px;
-     left: 60px;
-   }
-
-  .paragraph2::after {
-    display: block;
-      content: '';
-     width: 93.9%;
-     height: 1px;
-     position: absolute;
-     background: #7c7c7c;
-     bottom: 300px;
      left: 60px;
    }
 
