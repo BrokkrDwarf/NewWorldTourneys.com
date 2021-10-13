@@ -276,7 +276,6 @@ body {
 table {
   font-family: Arial;
   font-size : 14px;
-  background-color:#d1d2d4;
   border:1px solid rgb(126, 126, 126);
   border-collapse: collapse;
   text-align: center;
@@ -289,7 +288,6 @@ table {
 th {
   font-family: Arial;
   font-size : 14px;
-  background-color:#d1d2d4;
   border:1px solid rgb(126, 126, 126);
   border-collapse: collapse;
   text-align: center;
@@ -302,7 +300,6 @@ th {
 td {
   font-family: Arial;
   font-size : 14px;
-  background-color:#ffffff;
   border:1px solid rgb(126, 126, 126);
   border-collapse: collapse;
   text-align: center;
@@ -312,15 +309,22 @@ td {
   padding-left: 100px;
 }
 
+tr:nth-child(even) {
+  background-color: #008cff3a;
+}
+
+tr:nth-child(odd) {
+  background-color: #4b57ff23;
+}
+
 .panel {
   padding: 0 3px;
   display: none;
-  background-color: white;
   overflow: hidden;
 }
 
 .accordion {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.658);
   color: rgb(0, 0, 0);
   cursor: pointer;
   border: none;
